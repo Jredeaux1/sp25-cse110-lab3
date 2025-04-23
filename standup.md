@@ -1,6 +1,7 @@
 # 📝 Cache Me Outside Standup – **[Date]**
 **Name:** [Your Name]
 
+Members present: *list all present members* 
 ---
 
 ## ✅ Yesterday
