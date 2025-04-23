@@ -7,91 +7,99 @@
     <link rel="icon" href="favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-   <style>
-     .bebas-neue-regular {
-       font-family: "Bebas Neue", sans-serif;
-       font-weight: 400;
-       font-style: normal;
-     }
-     body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-      }
+<style>
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-      header {
-        background-color: #0066cc;
-        color: white;
-        padding: 1.5rem;
-        text-align: center;
-      }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
 
-      header h1 {
-        margin: 0;
-        font-size: 2.2rem;
-      }
+  header {
+    background-color: #0066cc;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
 
-      nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 0.5rem;
-      }
-       nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-      }
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
 
-      nav a:hover {
-        text-decoration: underline;
-      }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
 
-      main {
-        max-width: 800px;
-        margin: 2rem auto;
-        background-color: white;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-      section {
-        margin-bottom: 2rem;
-      }
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-      h2 {
-        class="bebas-neue-regular"
-        color: #00509e;
-        margin-bottom: 1rem;
-      }
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
-      ol, ul {
-        padding-left: 1.5rem;
-      }
+  section {
+    margin-bottom: 2rem;
+  }
 
-      details {
-        margin-top: 1rem;
-        background-color: #eef3fb;
-        padding: 1rem;
-        border-left: 4px solid #00509e;
-      }
+  /* Style section if it has an h1 with .bebas-neue-regular */
+  section:has(h1.bebas-neue-regular) {
+    background-color: #ffeaa7;
+    border-left: 4px solid #fdcb6e;
+    padding-left: 1rem;
+  }
 
-      footer {
-        text-align: center;
-        padding: 1rem;
-        background-color: #ddd;
-        font-size: 0.9rem;
-      }
-   </style>
+  h2 {
+    color: #00509e;
+    margin-bottom: 1rem;
+  }
+
+  ol, ul {
+    padding-left: 1.5rem;
+  }
+
+  details {
+    margin-top: 1rem;
+    background-color: #eef3fb;
+    padding: 1rem;
+    border-left: 4px solid #00509e;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ddd;
+    font-size: 0.9rem;
+  }
+</style>
   </head>
   <body>
     <header>
-      <h1>🚀 Cache Me Outside Weekly Meeting</h1>
+      <h1 class="bebas-neue-regular"> 🚀 Cache Me Outside Weekly Meeting</h1>
       <p><strong>Date:</strong> <em><!-- Add Date Here --> </em></p>
       <nav>
         <ul>
