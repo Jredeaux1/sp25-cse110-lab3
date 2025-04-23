@@ -1,101 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cache Me Outside - Meeting Notes</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="Cache Me Outside Weekly Meeting Notes" />
-    <link rel="icon" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cache Me Outside Weekly Meeting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <style>
+      /* Class Selector */
+      .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-<style>
-  .bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+      /* ID Selector */
+      #agenda {
+        border: 2px dashed #ccc;
+      }
 
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-  }
+      /* Universal Selector */
+      * {
+        box-sizing: border-box;
+      }
 
-  header {
-    background-color: #0066cc;
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-  }
+      /* Element Selector */
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #ddd;
+        font-size: 0.9rem;
+      }
 
-  header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-  }
+      /* Attribute Selector */
+      input[type="checkbox"] {
+        accent-color: #0066cc;
+      }
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-  }
+      /* Pseudo-class Selector */
+      nav a:hover {
+        text-decoration: underline;
+        color: #ffdd59;
+      }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
+      /* Selector List */
+      h1, h2 {
+        letter-spacing: 1px;
+      }
 
-  nav a:hover {
-    text-decoration: underline;
-  }
+      /* Descendant Combinator */
+      main section {
+        padding-bottom: 1rem;
+      }
 
-  main {
-    max-width: 800px;
-    margin: 2rem auto;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+      /* Child Combinator */
+      nav > ul {
+        border-top: 2px solid #fff;
+      }
 
-  section {
-    margin-bottom: 2rem;
-  }
+      /* General sibling combinator */
+      h2 ~ p {
+        font-style: italic;
+        color: #666;
+      }
 
-  /* Style section if it has an h1 with .bebas-neue-regular */
-  section:has(h1.bebas-neue-regular) {
-    background-color: #ffeaa7;
-    border-left: 4px solid #fdcb6e;
-    padding-left: 1rem;
-  }
+      /* Adjacent sibling combinator */
+      h2 + p {
+        font-weight: bold;
+      }
 
-  h2 {
-    color: #00509e;
-    margin-bottom: 1rem;
-  }
+      /* Combining Two Selectors */
+      h1.bebas-neue-regular {
+        font-size: 3rem;
+      }
 
-  ol, ul {
-    padding-left: 1.5rem;
-  }
+      /* :has() pseudo-class */
+      section:has(h1.bebas-neue-regular) {
+        background-color: #ffeaa7;
+        border-left: 4px solid #fdcb6e;
+        padding-left: 1rem;
+      }
 
-  details {
-    margin-top: 1rem;
-    background-color: #eef3fb;
-    padding: 1rem;
-    border-left: 4px solid #00509e;
-  }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
 
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ddd;
-    font-size: 0.9rem;
-  }
-</style>
+      header {
+        background-color: #0066cc;
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        color: #00509e;
+        margin-bottom: 1rem;
+      }
+
+      ol, ul {
+        padding-left: 1.5rem;
+      }
+
+      details {
+        margin-top: 1rem;
+        background-color: #eef3fb;
+        padding: 1rem;
+        border-left: 4px solid #00509e;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -136,7 +183,6 @@
           <p><!-- Add relevant links or notes here --></p>
         </details>
       </section>
-
 
       <section id="form">
         <h2>📣 Feedback Form</h2>
@@ -187,3 +233,4 @@
     </footer>
   </body>
 </html>
+
